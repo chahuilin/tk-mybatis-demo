@@ -5,8 +5,8 @@ import javax.persistence.*;
 
 @Table(name = "agent")
 public class Agent {
-    @Id
     @GeneratedValue(generator = "JDBC")
+    @Id
     private Integer id;
 
     /**

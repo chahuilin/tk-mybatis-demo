@@ -14,22 +14,22 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="${spring.datasource.url}"
-                        userId="${spring.datasource.username}"
-                        password="${spring.datasource.password}">
+                        connectionURL="${voipplatform.jdbc-url}"
+                        userId="${opensips.username}"
+                        password="${opensips.password}">
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="com.example.tkmybatisdemo.entity"
                             targetProject="src/main/java"/>
 
-        <sqlMapGenerator targetPackage="com.example.tkmybatisdemo.mapper"
+        <sqlMapGenerator targetPackage="com.example.tkmybatisdemo.mapper.opensips"
                          targetProject="src/main/resources"/>
 
-        <javaClientGenerator targetPackage="com.example.tkmybatisdemo.mapper"
+        <javaClientGenerator targetPackage="com.example.tkmybatisdemo.mapper.opensips"
                              targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
-        <table tableName="agent">
+        <table tableName="subscriber">
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
     </context>

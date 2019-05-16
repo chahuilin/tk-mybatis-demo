@@ -1,3 +1,5 @@
 # tk-mybatis-demo
-tk-mybatis-demo
-test
+
+spring boot和tk-mybatis集成
+
+支持多数据源

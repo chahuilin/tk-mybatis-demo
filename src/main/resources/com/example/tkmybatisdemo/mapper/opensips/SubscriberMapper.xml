@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.tkmybatisdemo.mapper.opensips.SubscriberMapper">
+  <resultMap id="BaseResultMap" type="com.example.tkmybatisdemo.entity.Subscriber">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="username" jdbcType="CHAR" property="username" />
+    <result column="domain" jdbcType="CHAR" property="domain" />
+    <result column="password" jdbcType="CHAR" property="password" />
+    <result column="email_address" jdbcType="CHAR" property="emailAddress" />
+    <result column="ha1" jdbcType="CHAR" property="ha1" />
+    <result column="ha1b" jdbcType="CHAR" property="ha1b" />
+    <result column="rpid" jdbcType="CHAR" property="rpid" />
+    <result column="route_type" jdbcType="INTEGER" property="routeType" />
+    <result column="route_dest" jdbcType="CHAR" property="routeDest" />
+  </resultMap>
+</mapper>
