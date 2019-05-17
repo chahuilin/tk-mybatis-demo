@@ -1,8 +1,22 @@
 # tk-mybatis-demo
 
-spring boot和tk-mybatis集成
+spring boot和tk-mybatis集成，支持多数据源
 
-支持多数据源
+# tk-mybatis
+
+通用Mapper都可以极大的方便开发人员。可以随意的按照自己的需要选择通用方法，还可以很方便的开发自己的通用方法。
+
+极其方便的使用MyBatis单表的增删改查。
+
+支持单表操作，不支持通用的多表联合查询。
+
+https://github.com/abel533/Mapper
+
+# PageHelper
+
+Mybatis通用分页插件
+
+https://github.com/pagehelper/Mybatis-PageHelper
 
 
 # spring-boot-devtools实现热部署
