@@ -5,7 +5,7 @@ spring boot和tk-mybatis集成
 支持多数据源
 
 
-#spring-boot-devtools实现热部署
+# spring-boot-devtools实现热部署
 
 1.找到idea的Preferences -> Build, Execution, Deployment -> Compiler，勾选Build project automatically
 
