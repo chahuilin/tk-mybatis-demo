@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.UUID;
 
 @RequestMapping("agent")
 @RestController
@@ -34,6 +35,15 @@ public class AgentController {
     @GetMapping("2/{id}")
     public Object findById2(@PathVariable Integer id) {
         return subscriberMapper.selectByPrimaryKey(id);
+    }
+
+    @GetMapping("add")
+    public Object add() {
+        Agent agent = new Agent();
+        agent.setEnterpriseId(UUID.randomUUID().toString());
+        agent.setUserId("x");
+        agentMapper.insertSelective(agent);
+        return "ok";
     }
 
 
